@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>منصة الكحلي | Al-Kohli Platform</title>
+    <!-- Google Fonts: Cairo & Tajawal for High-End Arabic Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              cairo: ['Cairo', 'Tajawal', 'sans-serif'],
+              tajawal: ['Tajawal', 'sans-serif'],
+            },
+            colors: {
+              navy: {
+                950: '#040812',
+                900: '#070f1e',
+                850: '#0a152b',
+                800: '#0e1c38',
+                700: '#14274c',
+                600: '#1d3768',
+                500: '#2b4d8d',
+              },
+              turquoise: {
+                300: '#67e8f9',
+                400: '#22d3ee',
+                500: '#06b6d4',
+                600: '#0891b2',
+                neon: '#00f7ff',
+                glow: '#0df',
+              },
+              gold: {
+                400: '#facc15',
+                500: '#eab308',
+                600: '#ca8a04',
+              }
+            },
+            animation: {
+              'pulse-fast': 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'float': 'float 3s ease-in-out infinite',
+              'glow': 'glow 2s ease-in-out infinite alternate',
+              'spin-slow': 'spin 12s linear infinite',
+              'bounce-gentle': 'bounceGentle 2s infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0px)' },
+                '50%': { transform: 'translateY(-8px)' },
+              },
+              glow: {
+                '0%': { filter: 'drop-shadow(0 0 6px rgba(0, 247, 255, 0.4))' },
+                '100%': { filter: 'drop-shadow(0 0 18px rgba(0, 247, 255, 0.9))' },
+              },
+              bounceGentle: {
+                '0%, 100%': { transform: 'translateY(-3%)' },
+                '50%': { transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Cairo', 'Tajawal', sans-serif;
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+      
+      /* Custom scrollbars */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(6, 182, 212, 0.3);
+        border-radius: 9999px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(6, 182, 212, 0.6);
+      }
+
+      /* Glassmorphism helpers */
+      .glass-navy {
+        background: rgba(10, 21, 43, 0.82);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(0, 247, 255, 0.15);
+      }
+      .glass-light {
+        background: rgba(255, 255, 255, 0.88);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(8, 145, 178, 0.18);
+      }
+
+      /* Neon border glow */
+      .neon-border {
+        box-shadow: 0 0 15px rgba(0, 247, 255, 0.25), inset 0 0 15px rgba(0, 247, 255, 0.1);
+      }
+      .neon-glow-btn {
+        box-shadow: 0 0 20px rgba(0, 247, 255, 0.4);
+      }
+      .gold-glow {
+        box-shadow: 0 0 20px rgba(234, 179, 8, 0.4);
+      }
+    </style>
+  </head>
+  <body class="bg-[#070f1e] text-slate-100 antialiased overflow-x-hidden min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
