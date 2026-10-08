@@ -1,0 +1,1 @@
+@layer base{*{box-sizing:border-box;margin:0;padding:0}html,body,#root{text-align:right;width:100%;min-height:100vh;margin:0;padding:0}}::-webkit-scrollbar{width:5px;height:5px}::-webkit-scrollbar-track{background:0 0}::-webkit-scrollbar-thumb{background:#06b6d459;border-radius:9999px}::-webkit-scrollbar-thumb:hover{background:#06b6d4b3}

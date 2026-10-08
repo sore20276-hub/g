@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>منصة الكحلي | Al-Kohli Platform</title>
+    <!-- Google Fonts: Cairo & Tajawal for High-End Arabic Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              cairo: ['Cairo', 'Tajawal', 'sans-serif'],
+              tajawal: ['Tajawal', 'sans-serif'],
+            },
+            colors: {
+              navy: {
+                950: '#040812',
+                900: '#070f1e',
+                850: '#0a152b',
+                800: '#0e1c38',
+                700: '#14274c',
+                600: '#1d3768',
+                500: '#2b4d8d',
+              },
+              turquoise: {
+                300: '#67e8f9',
+                400: '#22d3ee',
+                500: '#06b6d4',
+                600: '#0891b2',
+                neon: '#00f7ff',
+                glow: '#0df',
+              },
+              gold: {
+                400: '#facc15',
+                500: '#eab308',
+                600: '#ca8a04',
+              }
+            },
+            animation: {
+              'pulse-fast': 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'float': 'float 3s ease-in-out infinite',
+              'glow': 'glow 2s ease-in-out infinite alternate',
+              'spin-slow': 'spin 12s linear infinite',
+              'bounce-gentle': 'bounceGentle 2s infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0px)' },
+                '50%': { transform: 'translateY(-8px)' },
+              },
+              glow: {
+                '0%': { filter: 'drop-shadow(0 0 6px rgba(0, 247, 255, 0.4))' },
+                '100%': { filter: 'drop-shadow(0 0 18px rgba(0, 247, 255, 0.9))' },
+              },
+              bounceGentle: {
+                '0%, 100%': { transform: 'translateY(-3%)' },
+                '50%': { transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>body{-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;font-family:Cairo,Tajawal,sans-serif}::-webkit-scrollbar{width:6px;height:6px}::-webkit-scrollbar-track{background:0 0}::-webkit-scrollbar-thumb{background:#06b6d44d;border-radius:9999px}::-webkit-scrollbar-thumb:hover{background:#06b6d499}.glass-navy{-webkit-backdrop-filter:blur(16px);background:#0a152bd1;border:1px solid #00f7ff26}.glass-light{-webkit-backdrop-filter:blur(16px);background:#ffffffe0;border:1px solid #0891b22e}.neon-border{box-shadow:0 0 15px #00f7ff40,inset 0 0 15px #00f7ff1a}.neon-glow-btn{box-shadow:0 0 20px #00f7ff66}.gold-glow{box-shadow:0 0 20px #eab30866}</style>
+    <script type="module" crossorigin src="/assets/index-eG4LScJv.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-W-aC7f2j.css">
+  </head>
+  <body class="bg-[#070f1e] text-slate-100 antialiased overflow-x-hidden min-h-screen">
+    <div id="root"></div>
+  </body>
+</html>
